@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Reschedule_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Info_Obat_button_ObatDemam_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Info_Obat_IbuProven_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Info_Obat_Ambroxol_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".MasalahTidur_InfoPenyakit_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Stroke_penyakit_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Hipertensi_Penyakit_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pembayaran_Berhasil_Konsulasi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pilih_Metode_Pembayaran_Konsultasi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pembayaran_Konsultasi_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Konfirmasi_Data_Konsultasi_Activity"
+            android:exported="false" />
+        <!--
+<activity
+            android:name=".Pilih_Jadwal_Konsultasi_Activity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".Edit_Jadwal_Pesan_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pilih_Jadwal_Konsultasi_2_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pilih_Jadwal_Temu_Dokter_2_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailDokterKonsultasi"
+            android:exported="false" />
+        <activity
+            android:name=".Pilih_Dokter_KonsultasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KonsultasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Info_obat_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pembayaran_berhasil_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pilih_Metode_Pembayaran_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".PembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_InfoPenyakitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Info_ObatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Info_PenyakitActivity"
+            android:exported="false" />
+        <activity
+            android:name=".btnKolestrolActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailActivityArtikel"
+            android:exported="false" />
+        <activity
+            android:name=".ArtikelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RawatInapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KonfirmasiDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PilihDokterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FasilitasKesehatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FasilitasLayananActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TemudokterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PesanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashscreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.firebase.database.collectionDeferDropIndexing"
+            android:value="true" />
+    </application>
+
+</manifest>

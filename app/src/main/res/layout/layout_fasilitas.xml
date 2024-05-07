@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="628dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageButton
+            android:id="@+id/btnGigi"
+            android:layout_width="119dp"
+            android:layout_height="122dp"
+            android:layout_marginStart="272dp"
+
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gigi" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:layout_marginBottom="18dp"
+            android:text="Gigi"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/btnTelinga"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.855"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/btnParu"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="16dp"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toStartOf="@+id/btnGinjal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/paru"
+            />
+
+        <ImageButton
+            android:id="@+id/btnGinjal"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="144dp"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toStartOf="@+id/btnGigi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ginjal"
+            />
+
+        <ImageButton
+            android:id="@+id/btnTelinga"
+            android:layout_width="123dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="17dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/btnDNA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnDNA"
+            app:layout_constraintTop_toTopOf="@+id/btnDNA"
+            app:srcCompat="@drawable/telinga"
+            />
+
+        <ImageButton
+            android:id="@+id/btnJantung"
+            android:layout_width="123dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/btnDNA"
+            app:layout_constraintEnd_toStartOf="@+id/btnDNA"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnDNA"
+            app:srcCompat="@drawable/jantung"
+            />
+
+        <ImageButton
+            android:id="@+id/btnDNA"
+            android:layout_width="123dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="144dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="31dp"
+            android:background="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/btnTelinga"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView4"
+            app:srcCompat="@drawable/dna"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="328dp"
+            android:layout_marginEnd="87dp"
+            android:layout_marginBottom="20dp"
+            android:text="Jantung"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/btnSendi"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="192dp"
+            android:layout_marginTop="328dp"
+            android:layout_marginEnd="79dp"
+            android:layout_marginBottom="20dp"
+            android:text="DNA"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/btnlambung"
+            app:layout_constraintEnd_toStartOf="@+id/textV2ew23"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textV2ew23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="308dp"
+            android:layout_marginTop="328dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="20dp"
+            android:text="Telinga"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/btnUsus"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="156dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="18dp"
+            android:text="Paru-Paru"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/btnJantung"
+            app:layout_constraintEnd_toStartOf="@+id/textView4"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/btnParu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="156dp"
+            android:layout_marginBottom="18dp"
+            android:text="Ginjal"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/btnDNA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnSendi"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="372dp"
+            android:layout_marginEnd="5dp"
+            android:background="@null"
+            app:layout_constraintEnd_toStartOf="@+id/btnlambung"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sendi" />
+
+        <ImageButton
+            android:id="@+id/btnlambung"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="372dp"
+            android:layout_marginEnd="1dp"
+            android:background="@null"
+            app:layout_constraintEnd_toStartOf="@+id/btnUsus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/lambung"
+            />
+
+        <ImageButton
+            android:id="@+id/btnUsus"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="372dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="5dp"
+            android:background="@null"
+            app:layout_constraintBottom_toTopOf="@+id/textVi4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnlambung"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/usus"
+            />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="71dp"
+            android:layout_marginBottom="104dp"
+            android:text="Sendi"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textViw4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViw4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginBottom="104dp"
+            android:text="Lambung"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textVi4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textVi4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="308dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="104dp"
+            android:text="Usus"
+            android:textColor="@color/grey"
+            android:textSize="19sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

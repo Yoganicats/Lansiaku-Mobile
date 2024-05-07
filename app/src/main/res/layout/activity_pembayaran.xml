@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PembayaranActivity"
+    android:id="@+id/nsv">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/rectangle_4"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/rectangle_2344" />
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="39dp"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="368dp"
+                android:background="@null"
+                app:srcCompat="@drawable/chevron_left"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            <TextView
+                android:id="@+id/Tem2u"
+                android:layout_width="wrap_content"
+                android:layout_height="46dp"
+                android:layout_alignBottom="@+id/rectangle_4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="51dp"
+                android:layout_marginEnd="26dp"
+                android:layout_marginBottom="30dp"
+                android:text="Pembayaran Temu Dokter"
+                android:textColor="@color/grey"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:paddingHorizontal="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/item_pembayaran"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/txtMetode_Pembayaran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/chevron_pembayaran"
+                android:text="Pilih Metode Pembayaran"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_namaBank"
+                android:layout_width="395dp"
+                android:layout_height="43dp"
+                android:paddingTop="8dp"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:text="Bank BCA" />
+
+            <TextView
+                android:id="@+id/txt_ringksanpembayaran"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="8dp"
+                android:text="Ringkasan Pembayaran"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:paddingTop="16dp"
+                android:id="@+id/txt_subtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subtotal "
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/txt_hargaSubTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 "
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_layanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Biaya Layanan "
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/txt_hargalayanan"
+                android:layout_width="match_parent"
+                android:textAlignment="textEnd"
+                android:layout_height="wrap_content"
+                android:text="0 "
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:paddingTop="8dp"
+                android:id="@+id/txt_totalBiaya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Biaya"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt_hargaTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 "
+                android:textAlignment="textEnd"
+                android:textColor="@color/ijo"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn"
+                android:text="Lanjut"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+

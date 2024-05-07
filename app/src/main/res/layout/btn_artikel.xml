@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/btnSemua"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:background="@drawable/btn_artikel_ijo"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Semua"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMoveHipertensi"
+        app:layout_constraintEnd_toStartOf="@+id/btnMoveHipertensi"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnMoveHipertensi" />
+
+    <Button
+        android:id="@+id/btnDiabetes"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/btn_artikel"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Diabetes"
+        android:textColor="@color/ijo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMoveJantung"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMoveJantung"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/btn_artikel"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Jantung"
+        android:textColor="@color/ijo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDiabetes"
+        app:layout_constraintEnd_toStartOf="@+id/btnDiabetes"
+        app:layout_constraintStart_toEndOf="@+id/btnMoveHipertensi"
+        app:layout_constraintTop_toTopOf="@+id/btnDiabetes" />
+
+    <Button
+        android:id="@+id/btnMoveHipertensi"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="2dp"
+        android:background="@drawable/btn_artikel"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="Hipertensi"
+        android:textColor="@color/ijo"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMoveJantung"
+        app:layout_constraintEnd_toStartOf="@+id/btnMoveJantung"
+        app:layout_constraintStart_toEndOf="@+id/btnSemua"
+        app:layout_constraintTop_toTopOf="@+id/btnMoveJantung" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

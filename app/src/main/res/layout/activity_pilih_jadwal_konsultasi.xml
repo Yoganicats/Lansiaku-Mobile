@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Pilih_Jadwal_Konsultasi_Activity">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/view_konsultasi" />
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="11dp"
+        android:background="@null"
+        android:src="@drawable/chevron_left"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="319dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginHorizontal="82dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="47dp"
+        android:gravity="center"
+        android:text="Pilih Jadwal Konsultasi"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="28dp"
+        app:srcCompat="@drawable/step3_konsultasi" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="6dp"
+        android:layout_below="@id/topView"
+        android:layout_marginEnd="0dp"
+        android:text="Pilih Hari"
+        android:textColor="@color/grey"
+        android:textSize="28sp"
+        android:layout_marginTop="55dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/hariPilihLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:layout_below="@id/textView11"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/senin10Txt"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rectangle_pilih_hari"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:text="Senin\n10" />
+
+        <TextView
+            android:id="@+id/rabu12Txt"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rectangle_pilih_hari"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:text="Rabu\n12" />
+
+        <TextView
+            android:id="@+id/sabtu14txt"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/rectangle_pilih_hari"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="5"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:text="Sabtu\n14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/jadwalPagiLayout"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/hariPilihLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Pagi"
+            android:textColor="@color/grey"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delapantxt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="08.00 WIB" />
+
+            <TextView
+                android:id="@+id/sembilan30txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="5"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="09.30 WIB" />
+            <TextView
+                android:id="@+id/sepuluhtxt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="5"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="10.00 WIB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sepuluh15txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="10.15 WIB" />
+
+            <TextView
+                android:id="@+id/sepuluh30txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="5"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="10.30 WIB" />
+
+            <TextView
+                android:id="@+id/sebelas30txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="5"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="11.30 WIB" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/jadwalMalamLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jadwalPagiLayout"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Malam"
+            android:textColor="@color/grey"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/delapanbelas15txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="18.15 WIB" />
+
+            <TextView
+                android:id="@+id/delapanbelas30txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="5"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="18.30 WIB" />
+
+            <TextView
+                android:id="@+id/sembilanbelastxt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="5"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="19.00 WIB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/duapuluh15txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="5"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="20.15 WIB" />
+
+            <TextView
+                android:id="@+id/duapuluh30txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="5"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="20.30 WIB" />
+
+            <TextView
+                android:id="@+id/duapuluhsatu30txt"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/rectangle_jadwal_pagi_malam"
+
+                android:ellipsize="end"
+                android:gravity="center"
+
+                android:maxLines="5"
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:text="21.30 WIB" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/lanjutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_btn"
+        android:text="Lanjut"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

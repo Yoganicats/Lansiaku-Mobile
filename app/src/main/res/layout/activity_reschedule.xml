@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reschedule_activity">
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/rectangle_pesan"
+        tools:ignore="UnknownId" />
+
+
+    <TextView
+        android:id="@+id/ulangjadwal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="44dp"
+        android:text="Atur Ulang Jadwal"
+        android:textColor="@color/grey"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/plhtgl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="221dp"
+        android:text="Pilih Tanggal"
+        android:textColor="@color/grey"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/plhjam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginEnd="214dp"
+        android:text="Pilih Jam"
+        android:textColor="@color/grey"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="368dp"
+        android:background="@null"
+        app:srcCompat="@drawable/chevron_left"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/etJam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plhtgl"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="146dp"
+        android:layout_marginEnd="13dp"
+        android:textSize="25sp"
+        android:textColorHint="@color/black"
+
+        android:layout_toStartOf="@+id/btnJam"
+        android:hint="Pilih Jam yang ingin diubah" />
+
+
+    <ImageButton
+        android:id="@+id/btnJam"
+        android:layout_width="62dp"
+        android:layout_height="56dp"
+        android:layout_below="@+id/plhtgl"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="162dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/ijo"
+        android:src="@drawable/ic_baseline_more_time_24" />
+
+    <EditText
+        android:id="@+id/etTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ulangjadwal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="81dp"
+        android:layout_marginEnd="12dp"
+        android:textSize="25sp"
+        android:textColorHint="@color/black"
+        android:layout_toStartOf="@+id/btnTanggal"
+        android:hint="Pilih Tanggal yang ingin diubah" />
+
+    <ImageButton
+        android:id="@+id/btnTanggal"
+        android:layout_width="63dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="172dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/ijo"
+        android:src="@drawable/ic_baseline_date_range_24" />
+
+    <Button
+        android:id="@+id/btnsimpan_perubahan"
+        android:layout_width="373dp"
+        android:layout_height="67dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="754dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/button_nav"
+        android:text="Simpan Perubahan"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

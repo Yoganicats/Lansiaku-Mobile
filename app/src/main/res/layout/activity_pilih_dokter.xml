@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PilihDokterActivity">
+
+
+    <View
+        android:id="@+id/rectangle_4"
+        android:layout_width="wrap_content"
+        android:layout_height="151dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="-3dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/rectangle_temu" />
+
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="11dp"
+        android:background="@null"
+        app:srcCompat="@drawable/chevron_left"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Tem2u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="44dp"
+        android:text="Temu Dokter"
+        android:textColor="@color/grey"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/rectangle_4"
+
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="41dp"
+        android:text="Lokasi Anda"
+
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/yogya"
+        android:layout_width="159dp"
+        android:layout_height="29dp"
+
+
+        android:layout_alignBottom="@+id/rectangle_4"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="41dp"
+        android:layout_toEndOf="@+id/lokasi"
+        android:text="Yogyakarta, DIY"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="74dp"
+        app:srcCompat="@drawable/lokasi_marker" />
+
+
+    <TextView
+        android:id="@+id/Fasilit"
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="206dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="36dp"
+        android:gravity="center"
+        android:text="Pilihlah Dokter Untuk Bertemu"
+        android:textColor="@color/black"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="358dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="21dp"
+        app:srcCompat="@drawable/step3_temudokter" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvKlinik"
+        android:layout_width="match_parent"
+        android:layout_height="592dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="254dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="19dp"
+        tools:listitem="@layout/item_pilih_dokter" />
+
+
+</RelativeLayout>
+
+
+
+
