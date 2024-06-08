@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nsv"
+    tools:context=".Pilih_Metode_Pembayaran_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/rectangle_4"
+                android:layout_width="wrap_content"
+                android:layout_height="151dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginTop="-3dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/rectangle_2344" />
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="39dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="368dp"
+                android:background="@null"
+                app:srcCompat="@drawable/chevron_left"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+
+            <TextView
+                android:id="@+id/Tem2u"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rectangle_4"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="65dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="47dp"
+                android:text="Pilih Metode Pembayaran"
+                android:textColor="@color/grey"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:text="Metode Pembayaran"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bniTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:drawableLeft="@drawable/icon_bni"
+                android:drawableRight="@drawable/chevron_bulet"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:text="Bank BNI"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAlignment="gravity"
+                android:textColor="@color/profile"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/bcaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="107dp"
+                android:drawableLeft="@drawable/icon_bca"
+                android:drawableRight="@drawable/chevron_bulet"
+                android:drawablePadding="24.2dp"
+                android:paddingLeft="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingRight="10dp"
+                android:text="Bank BCA"
+                android:textAlignment="gravity"
+                android:textColor="@color/profile"
+                android:textSize="25dp" />
+            <TextView
+                android:id="@+id/briTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="158dp"
+                android:drawableLeft="@drawable/icon_bri"
+                android:drawableRight="@drawable/chevron_bulet"
+                android:drawablePadding="16dp"
+                android:paddingLeft="20dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingRight="10dp"
+                android:text="Bank BRI"
+                android:textAlignment="gravity"
+                android:textColor="@color/profile"
+                android:textSize="25dp" />
+
+
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingHorizontal="10dp"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="15dp"
+                android:text="E-Wallet"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gopayTxt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="60dp"
+                android:drawableLeft="@drawable/icon_gopay"
+                android:drawableRight="@drawable/chevron_bulet"
+                android:paddingRight="10dp"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:text="Gopay"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textColor="@color/profile"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/danaTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="115dp"
+                android:drawableLeft="@drawable/icon_dana"
+                android:drawableRight="@drawable/chevron_bulet"
+                android:paddingRight="10dp"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:drawablePadding="10dp"
+                android:paddingLeft="24dp"
+                android:text="DANA"
+                android:textColor="@color/profile"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/ovoTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:drawableLeft="@drawable/icon_ovo"
+                android:drawableRight="@drawable/chevron_bulet"
+                android:drawablePadding="10dp"
+                android:paddingLeft="20dp"
+                android:text="OVO"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:paddingRight="10dp"
+
+                android:textColor="@color/profile"
+                android:textSize="25dp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+
+

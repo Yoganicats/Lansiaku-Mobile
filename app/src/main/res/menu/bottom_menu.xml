@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item
+        android:id="@+id/home"
+
+        android:enabled="true"
+        android:icon="@drawable/homes"
+        android:title="Home"
+        />
+    <item
+        android:id="@+id/pesan"
+
+        android:enabled="true"
+        android:icon="@drawable/email"
+        android:title="Pesan"
+        />
+    <item
+        android:id="@+id/riwayat"
+
+        android:enabled="true"
+        android:icon="@drawable/history"
+        android:title="Riwayat"
+        />
+    <item
+        android:id="@+id/profile"
+
+        android:enabled="true"
+        android:icon="@drawable/orang_bottom"
+        android:title="Profile"
+        />
+
+
+
+
+
+
+
+
+</menu>

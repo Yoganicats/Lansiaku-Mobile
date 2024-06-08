@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nsv"
+    tools:context=".KonfirmasiDataActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="358dp"
+
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="133dp"
+                android:layout_marginEnd="21dp"
+                app:srcCompat="@drawable/step5_temudokter" />
+
+            <View
+                android:id="@+id/rectangle_4"
+                android:layout_width="match_parent"
+                android:layout_height="139dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/rectangle_2344" />
+
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="39dp"
+                android:layout_height="38dp"
+                android:layout_alignParentTop="true"
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="368dp"
+                android:background="@null"
+                app:srcCompat="@drawable/chevron_left"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/Tem2u"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignBottom="@+id/rectangle_4"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="44dp"
+                android:layout_marginBottom="79dp"
+                android:text="Temu Dokter"
+                android:textColor="@color/grey"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lokasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/rectangle_4"
+
+
+                android:layout_alignParentStart="true"
+
+                android:layout_marginStart="89dp"
+                android:layout_marginBottom="42dp"
+                android:text="Lokasi Anda"
+
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/yogya"
+                android:layout_width="158dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/rectangle_4"
+
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="67dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="43dp"
+                android:layout_toEndOf="@+id/lokasi"
+                android:text="Yogyakarta, DIY"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="63dp"
+                app:srcCompat="@drawable/lokasi_marker" />
+
+
+            <TextView
+                android:id="@+id/Fasilait"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:layout_alignParentStart="true"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="190dp"
+
+                android:layout_marginEnd="22dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="center"
+                android:text="Konfirmasi Data"
+                android:textColor="@color/black"
+                android:textSize="27sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/nama_pasien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="248dp"
+            android:layout_marginEnd="196dp"
+            android:text="Nama Pasien           :"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="247dp"
+            android:layout_marginEnd="5dp"
+            android:text="Nama"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/dr"
+            android:layout_width="211dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="289dp"
+            android:layout_marginEnd="196dp"
+            android:text="Dokter Pemeriksa  :"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_namaDokter"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="290dp"
+            android:layout_marginEnd="0dp"
+            android:text="Nama Dokter"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Fasilaefit"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="344dp"
+            android:layout_marginEnd="204dp"
+            android:text="Jenis Layanan        :"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_klinik"
+            android:layout_width="216dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="198dp"
+            android:layout_marginTop="344dp"
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="205dp"
+            android:text="Reguler"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/Fasilit"
+            android:layout_width="191dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="404dp"
+            android:layout_marginEnd="214dp"
+            android:layout_marginBottom="289dp"
+            android:text="Rumah Sakit           :"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRumahSakit"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="198dp"
+            android:layout_marginTop="404dp"
+
+            android:layout_marginEnd="-3dp"
+            android:layout_marginBottom="32dp"
+            android:text="RS Panti Rapih Yogyakarta"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harilayanan"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="499dp"
+            android:layout_marginEnd="202dp"
+            android:text="Jam Layanan          :"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/umum"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="556dp"
+            android:layout_marginEnd="6dp"
+            android:text="Umum (Pribadi)"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jeniswaktu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="453dp"
+            android:layout_marginEnd="205dp"
+            android:text="Tanggal Layanan   :"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_JamLayanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="199dp"
+            android:layout_marginTop="453dp"
+            android:layout_marginEnd="9dp"
+            android:text="20.30 - 22.00"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jenisPenjamin"
+            android:layout_width="197dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="556dp"
+            android:layout_marginEnd="210dp"
+            android:text="Jenis Penjamin      :"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hariOperasional"
+            android:layout_width="203dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="202dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginEnd="6dp"
+            android:text="20.30"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="107dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="629dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle_mohon"
+            android:text="MOHON PERHATIAN : Segera lakukan pembayaran untuk menghindari perubahan nomor antrian oleh system. Pembayaran dapat diproses mulai pukul 05.00 - 21.00 WIB dan tidak dapat dikembalikan"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15.3dp"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="379dp"
+            android:layout_height="61dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="758dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rectangle_btn"
+            android:text="lanjut ke pembayaran"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textColor="@color/white"
+            android:textSize="21dp" />
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+
+
+
+

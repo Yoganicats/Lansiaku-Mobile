@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="360dp">
+
+
+    <ImageButton
+        android:id="@+id/btnTemuDokter"
+        android:layout_width="124dp"
+        android:layout_height="127dp"
+
+
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/btnKosultasi"
+        app:layout_constraintEnd_toStartOf="@+id/btnKosultasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnKosultasi"
+        app:srcCompat="@drawable/temudokter"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnKosultasi"
+        android:layout_width="128dp"
+        android:layout_height="123dp"
+        android:layout_marginTop="16dp"
+
+        android:layout_marginBottom="14dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/btnArtikel"
+        app:layout_constraintStart_toEndOf="@+id/btnTemuDokter"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/konsultasi"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnArtikel"
+        android:layout_width="122dp"
+        android:layout_height="126dp"
+
+        android:layout_marginBottom="7dp"
+        android:background="@null"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnKosultasi"
+        app:layout_constraintTop_toTopOf="@+id/btnKosultasi"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/artikel"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnInfoPenyakit"
+        android:layout_width="120dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="1dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/btnInfoObat"
+        app:layout_constraintEnd_toStartOf="@+id/btnArtikel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnInfoObat"
+        app:srcCompat="@drawable/infopenyakit"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/btnInfoObat"
+        android:layout_width="122dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="55dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnArtikel"
+        app:layout_constraintStart_toEndOf="@+id/btnInfoPenyakit"
+        app:layout_constraintTop_toBottomOf="@+id/btnKosultasi"
+        app:srcCompat="@drawable/infoobat"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="32dp"
+        android:text="Artikel"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnArtikel"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/btnArtikel" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="150dp"
+        android:lineHeight="24sp"
+        android:text="Temu Dokter"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/btnTemuDokter"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:text="Konsultasi"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/btnKosultasi"
+        app:layout_constraintTop_toBottomOf="@+id/btnKosultasi" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="Info Penyakit"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btnInfoPenyakit"
+        app:layout_constraintTop_toBottomOf="@+id/btnInfoPenyakit" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="3dp"
+        android:text="Info Obat"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/btnInfoObat"
+        app:layout_constraintTop_toBottomOf="@+id/btnInfoObat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

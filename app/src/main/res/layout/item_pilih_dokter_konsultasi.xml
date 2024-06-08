@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="411dp"
+        android:layout_height="285dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_dokter_konsultasi"
+            android:layout_width="152dp"
+            android:layout_height="238dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_namaDokterKonsultasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@id/img_dokter_konsultasi"
+            android:layout_toRightOf="@id/img_dokter_konsultasi"
+            android:textColor="@color/warnaJam"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="@string/heroes_name" />
+
+        <TextView
+            android:id="@+id/tv_spesialisKonsultasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="79dp"
+            android:layout_marginRight="16dp"
+            android:layout_toEndOf="@id/img_dokter_konsultasi"
+            android:layout_toRightOf="@id/img_dokter_konsultasi"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="@color/ijo"
+            android:textSize="24sp"
+            tools:text="@string/description" />
+
+        <TextView
+            android:id="@+id/tv_hargaDokterKonsultasi"
+            android:layout_width="193dp"
+            android:layout_height="31dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="104dp"
+            android:layout_toEndOf="@id/img_dokter_konsultasi"
+            android:layout_toRightOf="@id/img_dokter_konsultasi"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="@string/harga" />
+
+        <TextView
+            android:id="@+id/tv_lamakerjaDokter"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="46dp"
+            android:drawableLeft="@drawable/ic_lamabekerja"
+            android:ellipsize="end"
+
+            android:gravity="right"
+            android:maxLines="5"
+            android:paddingStart="5dp"
+            android:textColor="@color/ijo"
+            android:textSize="24sp"
+            tools:text="4 Tahun" />
+
+        <TextView
+            android:id="@+id/tv_MulaiKonsultasi"
+            android:layout_width="193dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="75dp"
+
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="-5dp"
+            android:layout_toEndOf="@+id/img_dokter_konsultasi"
+            android:background="@drawable/btnpesan"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="5"
+            android:paddingLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            tools:text="Mulai Konsultasi" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

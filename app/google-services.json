@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1050080622798",
+    "firebase_url": "https://project-skripsi-lansiaku-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "project-skripsi-lansiaku",
+    "storage_bucket": "project-skripsi-lansiaku.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050080622798:android:57c37ea52f429f2b27389f",
+        "android_client_info": {
+          "package_name": "id.ac.ukdw.skripsilansiaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1050080622798-6hcrk699nafrftatnidenrfm5n3lqfas.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.ukdw.skripsilansiaku",
+            "certificate_hash": "be6049a931e9d6721928b54175c780cbe8aff10a"
+          }
+        },
+        {
+          "client_id": "1050080622798-05d020js9loqbd79loa0m3ljoi3qp63c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5Sz8l6bDzqrKxpXcdoGYsHc4VEezFhX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1050080622798-05d020js9loqbd79loa0m3ljoi3qp63c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
